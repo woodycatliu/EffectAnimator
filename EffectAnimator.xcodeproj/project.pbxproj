@@ -20,6 +20,8 @@
 		7FCF560B261C3F6C004D8A61 /* BasicLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF5607261C3F6C004D8A61 /* BasicLabel.swift */; };
 		7FCF560C261C3F6C004D8A61 /* BaseAnimatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF5608261C3F6C004D8A61 /* BaseAnimatorView.swift */; };
 		7FCF560D261C3F6C004D8A61 /* BasicAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF560A261C3F6C004D8A61 /* BasicAnimator.swift */; };
+		7FCF565B261C4925004D8A61 /* WaveMarqueeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF565A261C4925004D8A61 /* WaveMarqueeRenderer.swift */; };
+		7FCF565F261C4BF8004D8A61 /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF565E261C4BF8004D8A61 /* String_Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		7FCF5607261C3F6C004D8A61 /* BasicLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicLabel.swift; sourceTree = "<group>"; };
 		7FCF5608261C3F6C004D8A61 /* BaseAnimatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAnimatorView.swift; sourceTree = "<group>"; };
 		7FCF560A261C3F6C004D8A61 /* BasicAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicAnimator.swift; sourceTree = "<group>"; };
+		7FCF565A261C4925004D8A61 /* WaveMarqueeRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveMarqueeRenderer.swift; sourceTree = "<group>"; };
+		7FCF565E261C4BF8004D8A61 /* String_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 			children = (
 				7FCF55F8261C3F1A004D8A61 /* UIImage.swift */,
 				7FCF55F9261C3F1A004D8A61 /* Double_extension.swift */,
+				7FCF565E261C4BF8004D8A61 /* String_Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 			children = (
 				7FCF55FF261C3F2B004D8A61 /* protocol */,
 				7FCF5601261C3F2B004D8A61 /* MarqueeRenderer.swift */,
+				7FCF565A261C4925004D8A61 /* WaveMarqueeRenderer.swift */,
 			);
 			path = Renderer;
 			sourceTree = "<group>";
@@ -273,8 +279,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FCF565F261C4BF8004D8A61 /* String_Extension.swift in Sources */,
 				7FCF55FB261C3F1A004D8A61 /* Double_extension.swift in Sources */,
 				7FCF5603261C3F2B004D8A61 /* MarqueeRenderer.swift in Sources */,
+				7FCF565B261C4925004D8A61 /* WaveMarqueeRenderer.swift in Sources */,
 				7FCF560C261C3F6C004D8A61 /* BaseAnimatorView.swift in Sources */,
 				7FCF55FA261C3F1A004D8A61 /* UIImage.swift in Sources */,
 				7FCF55ED261C3EEF004D8A61 /* DateUtility.swift in Sources */,

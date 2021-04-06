@@ -15,13 +15,18 @@ class ViewController: UIViewController {
     
     let renderer: MqrqueeRenderer = MqrqueeRenderer(duration: 5)
     
+    let waveMarqeeRenderer: WaveMqrqueeRenderer = WaveMqrqueeRenderer(duration: 5)
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         renderer.text = "Test addsadsad"
+        renderer.direction = .left
         
-        basicView.animatorRenderers = [renderer]
+        waveMarqeeRenderer.text = "https://translate.google.com.tw/?hl=zh-TW&sl=zh-CN&tl=en&text=X%20%E8%BB%B8&op=translate"
+        
+        basicView.animatorRenderers = [renderer, waveMarqeeRenderer]
         basicView.backgroundColor = .yellow
         
         view.addSubview(basicView)
@@ -31,9 +36,8 @@ class ViewController: UIViewController {
             basicView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             basicView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             basicView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            basicView.heightAnchor.constraint(equalToConstant: 30)
+            basicView.heightAnchor.constraint(equalToConstant: 50)
         ])
-        
         basicView.setup()
         basicView.startAnimate()
     
