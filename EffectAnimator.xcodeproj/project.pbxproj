@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7FCF55D8261C3ED6004D8A61 /* EffectAnimator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FCF55CE261C3ED6004D8A61 /* EffectAnimator.framework */; };
+		7FCF55DD261C3ED6004D8A61 /* EffectAnimatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF55DC261C3ED6004D8A61 /* EffectAnimatorTests.swift */; };
+		7FCF55DF261C3ED6004D8A61 /* EffectAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FCF55D1261C3ED6004D8A61 /* EffectAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FCF55ED261C3EEF004D8A61 /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF55EB261C3EEF004D8A61 /* DateUtility.swift */; };
+		7FCF55EE261C3EEF004D8A61 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF55EC261C3EEF004D8A61 /* Logger.swift */; };
+		7FCF55F4261C3F03004D8A61 /* Program planning.md in Resources */ = {isa = PBXBuildFile; fileRef = 7FCF55F3261C3F03004D8A61 /* Program planning.md */; };
+		7FCF55FA261C3F1A004D8A61 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF55F8261C3F1A004D8A61 /* UIImage.swift */; };
+		7FCF55FB261C3F1A004D8A61 /* Double_extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF55F9261C3F1A004D8A61 /* Double_extension.swift */; };
+		7FCF5602261C3F2B004D8A61 /* BaseRendererProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF5600261C3F2B004D8A61 /* BaseRendererProtocol.swift */; };
+		7FCF5603261C3F2B004D8A61 /* MarqueeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF5601261C3F2B004D8A61 /* MarqueeRenderer.swift */; };
+		7FCF560B261C3F6C004D8A61 /* BasicLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF5607261C3F6C004D8A61 /* BasicLabel.swift */; };
+		7FCF560C261C3F6C004D8A61 /* BaseAnimatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF5608261C3F6C004D8A61 /* BaseAnimatorView.swift */; };
+		7FCF560D261C3F6C004D8A61 /* BasicAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF560A261C3F6C004D8A61 /* BasicAnimator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7FCF55D9261C3ED6004D8A61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FCF55C5261C3ED6004D8A61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FCF55CD261C3ED6004D8A61;
+			remoteInfo = EffectAnimator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7FCF55CE261C3ED6004D8A61 /* EffectAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EffectAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FCF55D1261C3ED6004D8A61 /* EffectAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectAnimator.h; sourceTree = "<group>"; };
+		7FCF55D2261C3ED6004D8A61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FCF55D7261C3ED6004D8A61 /* EffectAnimatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EffectAnimatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FCF55DC261C3ED6004D8A61 /* EffectAnimatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectAnimatorTests.swift; sourceTree = "<group>"; };
+		7FCF55DE261C3ED6004D8A61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FCF55EB261C3EEF004D8A61 /* DateUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtility.swift; sourceTree = "<group>"; };
+		7FCF55EC261C3EEF004D8A61 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		7FCF55F3261C3F03004D8A61 /* Program planning.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Program planning.md"; sourceTree = "<group>"; };
+		7FCF55F8261C3F1A004D8A61 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		7FCF55F9261C3F1A004D8A61 /* Double_extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double_extension.swift; sourceTree = "<group>"; };
+		7FCF5600261C3F2B004D8A61 /* BaseRendererProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRendererProtocol.swift; sourceTree = "<group>"; };
+		7FCF5601261C3F2B004D8A61 /* MarqueeRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarqueeRenderer.swift; sourceTree = "<group>"; };
+		7FCF5607261C3F6C004D8A61 /* BasicLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicLabel.swift; sourceTree = "<group>"; };
+		7FCF5608261C3F6C004D8A61 /* BaseAnimatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAnimatorView.swift; sourceTree = "<group>"; };
+		7FCF560A261C3F6C004D8A61 /* BasicAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicAnimator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7FCF55CB261C3ED6004D8A61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FCF55D4261C3ED6004D8A61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FCF55D8261C3ED6004D8A61 /* EffectAnimator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7FCF55C4261C3ED6004D8A61 = {
+			isa = PBXGroup;
+			children = (
+				7FCF55D0261C3ED6004D8A61 /* EffectAnimator */,
+				7FCF55DB261C3ED6004D8A61 /* EffectAnimatorTests */,
+				7FCF55CF261C3ED6004D8A61 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7FCF55CF261C3ED6004D8A61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FCF55CE261C3ED6004D8A61 /* EffectAnimator.framework */,
+				7FCF55D7261C3ED6004D8A61 /* EffectAnimatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FCF55D0261C3ED6004D8A61 /* EffectAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				7FCF55EA261C3EEF004D8A61 /* Moudel */,
+				7FCF55F7261C3F1A004D8A61 /* Extension */,
+				7FCF5606261C3F6C004D8A61 /* BasicUI */,
+				7FCF55FE261C3F2B004D8A61 /* Renderer */,
+				7FCF55D1261C3ED6004D8A61 /* EffectAnimator.h */,
+				7FCF55D2261C3ED6004D8A61 /* Info.plist */,
+				7FCF55F3261C3F03004D8A61 /* Program planning.md */,
+			);
+			path = EffectAnimator;
+			sourceTree = "<group>";
+		};
+		7FCF55DB261C3ED6004D8A61 /* EffectAnimatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				7FCF55DC261C3ED6004D8A61 /* EffectAnimatorTests.swift */,
+				7FCF55DE261C3ED6004D8A61 /* Info.plist */,
+			);
+			path = EffectAnimatorTests;
+			sourceTree = "<group>";
+		};
+		7FCF55EA261C3EEF004D8A61 /* Moudel */ = {
+			isa = PBXGroup;
+			children = (
+				7FCF55EB261C3EEF004D8A61 /* DateUtility.swift */,
+				7FCF55EC261C3EEF004D8A61 /* Logger.swift */,
+			);
+			path = Moudel;
+			sourceTree = "<group>";
+		};
+		7FCF55F7261C3F1A004D8A61 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7FCF55F8261C3F1A004D8A61 /* UIImage.swift */,
+				7FCF55F9261C3F1A004D8A61 /* Double_extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		7FCF55FE261C3F2B004D8A61 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				7FCF55FF261C3F2B004D8A61 /* protocol */,
+				7FCF5601261C3F2B004D8A61 /* MarqueeRenderer.swift */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		7FCF55FF261C3F2B004D8A61 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				7FCF5600261C3F2B004D8A61 /* BaseRendererProtocol.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		7FCF5606261C3F6C004D8A61 /* BasicUI */ = {
+			isa = PBXGroup;
+			children = (
+				7FCF5607261C3F6C004D8A61 /* BasicLabel.swift */,
+				7FCF5608261C3F6C004D8A61 /* BaseAnimatorView.swift */,
+				7FCF5609261C3F6C004D8A61 /* protocol */,
+			);
+			path = BasicUI;
+			sourceTree = "<group>";
+		};
+		7FCF5609261C3F6C004D8A61 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				7FCF560A261C3F6C004D8A61 /* BasicAnimator.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7FCF55C9261C3ED6004D8A61 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FCF55DF261C3ED6004D8A61 /* EffectAnimator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7FCF55CD261C3ED6004D8A61 /* EffectAnimator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FCF55E2261C3ED6004D8A61 /* Build configuration list for PBXNativeTarget "EffectAnimator" */;
+			buildPhases = (
+				7FCF55C9261C3ED6004D8A61 /* Headers */,
+				7FCF55CA261C3ED6004D8A61 /* Sources */,
+				7FCF55CB261C3ED6004D8A61 /* Frameworks */,
+				7FCF55CC261C3ED6004D8A61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EffectAnimator;
+			productName = EffectAnimator;
+			productReference = 7FCF55CE261C3ED6004D8A61 /* EffectAnimator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7FCF55D6261C3ED6004D8A61 /* EffectAnimatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FCF55E5261C3ED6004D8A61 /* Build configuration list for PBXNativeTarget "EffectAnimatorTests" */;
+			buildPhases = (
+				7FCF55D3261C3ED6004D8A61 /* Sources */,
+				7FCF55D4261C3ED6004D8A61 /* Frameworks */,
+				7FCF55D5261C3ED6004D8A61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FCF55DA261C3ED6004D8A61 /* PBXTargetDependency */,
+			);
+			name = EffectAnimatorTests;
+			productName = EffectAnimatorTests;
+			productReference = 7FCF55D7261C3ED6004D8A61 /* EffectAnimatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7FCF55C5261C3ED6004D8A61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					7FCF55CD261C3ED6004D8A61 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					7FCF55D6261C3ED6004D8A61 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 7FCF55C8261C3ED6004D8A61 /* Build configuration list for PBXProject "EffectAnimator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7FCF55C4261C3ED6004D8A61;
+			productRefGroup = 7FCF55CF261C3ED6004D8A61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7FCF55CD261C3ED6004D8A61 /* EffectAnimator */,
+				7FCF55D6261C3ED6004D8A61 /* EffectAnimatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7FCF55CC261C3ED6004D8A61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FCF55F4261C3F03004D8A61 /* Program planning.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FCF55D5261C3ED6004D8A61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7FCF55CA261C3ED6004D8A61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FCF55FB261C3F1A004D8A61 /* Double_extension.swift in Sources */,
+				7FCF5603261C3F2B004D8A61 /* MarqueeRenderer.swift in Sources */,
+				7FCF560C261C3F6C004D8A61 /* BaseAnimatorView.swift in Sources */,
+				7FCF55FA261C3F1A004D8A61 /* UIImage.swift in Sources */,
+				7FCF55ED261C3EEF004D8A61 /* DateUtility.swift in Sources */,
+				7FCF5602261C3F2B004D8A61 /* BaseRendererProtocol.swift in Sources */,
+				7FCF560B261C3F6C004D8A61 /* BasicLabel.swift in Sources */,
+				7FCF560D261C3F6C004D8A61 /* BasicAnimator.swift in Sources */,
+				7FCF55EE261C3EEF004D8A61 /* Logger.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FCF55D3261C3ED6004D8A61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FCF55DD261C3ED6004D8A61 /* EffectAnimatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7FCF55DA261C3ED6004D8A61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FCF55CD261C3ED6004D8A61 /* EffectAnimator */;
+			targetProxy = 7FCF55D9261C3ED6004D8A61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7FCF55E0261C3ED6004D8A61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7FCF55E1261C3ED6004D8A61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7FCF55E3261C3ED6004D8A61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = EffectAnimator/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_BUNDLE_IDENTIFIER = "woody-Animator.EffectAnimator";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7FCF55E4261C3ED6004D8A61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = EffectAnimator/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_BUNDLE_IDENTIFIER = "woody-Animator.EffectAnimator";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7FCF55E6261C3ED6004D8A61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EffectAnimatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "woody-Animator.EffectAnimatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7FCF55E7261C3ED6004D8A61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EffectAnimatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "woody-Animator.EffectAnimatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7FCF55C8261C3ED6004D8A61 /* Build configuration list for PBXProject "EffectAnimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FCF55E0261C3ED6004D8A61 /* Debug */,
+				7FCF55E1261C3ED6004D8A61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FCF55E2261C3ED6004D8A61 /* Build configuration list for PBXNativeTarget "EffectAnimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FCF55E3261C3ED6004D8A61 /* Debug */,
+				7FCF55E4261C3ED6004D8A61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FCF55E5261C3ED6004D8A61 /* Build configuration list for PBXNativeTarget "EffectAnimatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FCF55E6261C3ED6004D8A61 /* Debug */,
+				7FCF55E7261C3ED6004D8A61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7FCF55C5261C3ED6004D8A61 /* Project object */;
+}
