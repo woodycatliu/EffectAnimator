@@ -22,6 +22,7 @@
 		7FCF560D261C3F6C004D8A61 /* BasicAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF560A261C3F6C004D8A61 /* BasicAnimator.swift */; };
 		7FCF565B261C4925004D8A61 /* WaveMarqueeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF565A261C4925004D8A61 /* WaveMarqueeRenderer.swift */; };
 		7FCF565F261C4BF8004D8A61 /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF565E261C4BF8004D8A61 /* String_Extension.swift */; };
+		7FCF5663261C6016004D8A61 /* OceanWaveEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF5662261C6016004D8A61 /* OceanWaveEffect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		7FCF560A261C3F6C004D8A61 /* BasicAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicAnimator.swift; sourceTree = "<group>"; };
 		7FCF565A261C4925004D8A61 /* WaveMarqueeRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveMarqueeRenderer.swift; sourceTree = "<group>"; };
 		7FCF565E261C4BF8004D8A61 /* String_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_Extension.swift; sourceTree = "<group>"; };
+		7FCF5662261C6016004D8A61 /* OceanWaveEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OceanWaveEffect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				7FCF55FF261C3F2B004D8A61 /* protocol */,
 				7FCF5601261C3F2B004D8A61 /* MarqueeRenderer.swift */,
 				7FCF565A261C4925004D8A61 /* WaveMarqueeRenderer.swift */,
+				7FCF5662261C6016004D8A61 /* OceanWaveEffect.swift */,
 			);
 			path = Renderer;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				7FCF565B261C4925004D8A61 /* WaveMarqueeRenderer.swift in Sources */,
 				7FCF560C261C3F6C004D8A61 /* BaseAnimatorView.swift in Sources */,
 				7FCF55FA261C3F1A004D8A61 /* UIImage.swift in Sources */,
+				7FCF5663261C6016004D8A61 /* OceanWaveEffect.swift in Sources */,
 				7FCF55ED261C3EEF004D8A61 /* DateUtility.swift in Sources */,
 				7FCF5602261C3F2B004D8A61 /* BaseRendererProtocol.swift in Sources */,
 				7FCF560B261C3F6C004D8A61 /* BasicLabel.swift in Sources */,

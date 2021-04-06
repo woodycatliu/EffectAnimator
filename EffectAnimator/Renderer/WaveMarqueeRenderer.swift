@@ -74,7 +74,7 @@ open class WaveMqrqueeRenderer: BaseRenderer {
         }
         
         UIGraphicsPushContext(ctx)
-        
+
         for i in 0..<text.count {
             let string = characterString[i]
             let spacing = i == 0 || i == text.count - 1 ? 0 : self.spacing

@@ -74,6 +74,7 @@ extension EABasicView {
         
         for renderer in animatorRenderers {
             ctx = renderer.draw(in: ctx, rect, timeInterval: _interval)
+            ctx.setAlpha(1)
         }
         super.draw(rect)
     }

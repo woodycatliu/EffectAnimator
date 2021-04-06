@@ -52,7 +52,6 @@ open class MqrqueeRenderer: BaseRenderer {
         let y = ctxHeight - texHeight <= 0 ? 0 : (ctxHeight - texHeight) / 2
         
         UIGraphicsPushContext(ctx)
-        
         let attributes: [NSAttributedString.Key: Any] = [.foregroundColor: textColor, .font: textFont]
         let stringAttribute = NSAttributedString(string: self.text ?? "", attributes: attributes)
         stringAttribute.draw(at: CGPoint(x: x, y: y))

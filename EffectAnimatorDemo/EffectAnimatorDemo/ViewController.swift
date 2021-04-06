@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     
     let waveMarqeeRenderer: WaveMqrqueeRenderer = WaveMqrqueeRenderer(duration: 5)
     
+    let waveRenderer: OceanWaveRenderer = OceanWaveRenderer(duration: 3)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,7 @@ class ViewController: UIViewController {
         
         waveMarqeeRenderer.text = "https://translate.google.com.tw/?hl=zh-TW&sl=zh-CN&tl=en&text=X%20%E8%BB%B8&op=translate"
         
-        basicView.animatorRenderers = [renderer, waveMarqeeRenderer]
+        basicView.animatorRenderers = [waveRenderer, renderer, waveMarqeeRenderer]
         basicView.backgroundColor = .yellow
         
         view.addSubview(basicView)
