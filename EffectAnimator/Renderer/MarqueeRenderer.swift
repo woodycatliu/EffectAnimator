@@ -44,9 +44,12 @@ open class MqrqueeRenderer: BaseRenderer {
         let x: CGFloat
         
         if direction == .right {
+//            x = ctxWidth - pathWidth * percent
             x = ctxWidth - pathWidth * sin(percent * .pi / 2)
         } else {
-            x = ctxWidth - pathWidth * cos(percent * .pi / 2)
+//            x = ctxWidth - pathWidth * (1 - percent)
+
+            x = ctxWidth - pathWidth * (1 - sin((percent) * .pi / 2))
         }
         
         let y = ctxHeight - texHeight <= 0 ? 0 : (ctxHeight - texHeight) / 2
