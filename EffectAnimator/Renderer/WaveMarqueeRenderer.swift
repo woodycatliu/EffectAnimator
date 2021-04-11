@@ -53,7 +53,7 @@ open class WaveMqrqueeRenderer: BaseRenderer {
         // x軸 1 xPixel 相對三角函數的角度。
         let xPixelAngle: CGFloat = .pi / 2 * waveCount / rect.width
         
-//        let textRect = text.bounds(textFont)
+        // let textRect = text.bounds(textFont)
         let textWidth = (singleTextBounds.width + spacing) * CGFloat(text.count) - spacing
         
         // 畫板寬度

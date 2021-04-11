@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         
         renderer.text = "Test addsadsad"
         renderer.direction = .left
-        
+
         waveMarqeeRenderer.text = "https://translate.google.com.tw/?hl=zh-TW&sl=zh-CN&tl=en&text=X%20%E8%BB%B8&op=translate"
         
 //        basicView.animatorRenderers = [waveRenderer, renderer, waveMarqeeRenderer]

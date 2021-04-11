@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B76A64B2623567D00966D6B /* UtilityDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A64A2623567D00966D6B /* UtilityDrawer.swift */; };
 		7FCF55D8261C3ED6004D8A61 /* EffectAnimator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FCF55CE261C3ED6004D8A61 /* EffectAnimator.framework */; };
 		7FCF55DD261C3ED6004D8A61 /* EffectAnimatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF55DC261C3ED6004D8A61 /* EffectAnimatorTests.swift */; };
 		7FCF55DF261C3ED6004D8A61 /* EffectAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FCF55D1261C3ED6004D8A61 /* EffectAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B76A64A2623567D00966D6B /* UtilityDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityDrawer.swift; sourceTree = "<group>"; };
 		7FCF55CE261C3ED6004D8A61 /* EffectAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EffectAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FCF55D1261C3ED6004D8A61 /* EffectAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectAnimator.h; sourceTree = "<group>"; };
 		7FCF55D2261C3ED6004D8A61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B76A6492623563C00966D6B /* UtilityDrawer */ = {
+			isa = PBXGroup;
+			children = (
+				5B76A64A2623567D00966D6B /* UtilityDrawer.swift */,
+			);
+			path = UtilityDrawer;
+			sourceTree = "<group>";
+		};
 		7FCF55C4261C3ED6004D8A61 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +107,7 @@
 		7FCF55D0261C3ED6004D8A61 /* EffectAnimator */ = {
 			isa = PBXGroup;
 			children = (
+				5B76A6492623563C00966D6B /* UtilityDrawer */,
 				7FCF55EA261C3EEF004D8A61 /* Moudel */,
 				7FCF55F7261C3F1A004D8A61 /* Extension */,
 				7FCF5606261C3F6C004D8A61 /* BasicUI */,
@@ -291,6 +302,7 @@
 				7FCF5663261C6016004D8A61 /* OceanWaveEffect.swift in Sources */,
 				7FCF55ED261C3EEF004D8A61 /* DateUtility.swift in Sources */,
 				7FCF5602261C3F2B004D8A61 /* BaseRendererProtocol.swift in Sources */,
+				5B76A64B2623567D00966D6B /* UtilityDrawer.swift in Sources */,
 				7FCF560B261C3F6C004D8A61 /* BasicLabel.swift in Sources */,
 				7FCF560D261C3F6C004D8A61 /* BasicAnimator.swift in Sources */,
 				7FCF55EE261C3EEF004D8A61 /* Logger.swift in Sources */,
