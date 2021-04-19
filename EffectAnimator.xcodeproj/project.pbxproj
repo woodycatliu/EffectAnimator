@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5B76A64B2623567D00966D6B /* UtilityDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A64A2623567D00966D6B /* UtilityDrawer.swift */; };
+		5B76A6512624923C00966D6B /* ShapeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A6502624923C00966D6B /* ShapeBuilder.swift */; };
+		5B76A65B26274D3F00966D6B /*  RhombusTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A65A26274D3F00966D6B /*  RhombusTest.swift */; };
+		5BF4E4F8262DD87E007D9AE5 /* CGAffineTrabsform_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4E4F7262DD87E007D9AE5 /* CGAffineTrabsform_Extension.swift */; };
+		5BF4E4FD262DDB63007D9AE5 /* RhombusBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4E4FC262DDB63007D9AE5 /* RhombusBuilder.swift */; };
 		7FCF55D8261C3ED6004D8A61 /* EffectAnimator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FCF55CE261C3ED6004D8A61 /* EffectAnimator.framework */; };
 		7FCF55DD261C3ED6004D8A61 /* EffectAnimatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF55DC261C3ED6004D8A61 /* EffectAnimatorTests.swift */; };
 		7FCF55DF261C3ED6004D8A61 /* EffectAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FCF55D1261C3ED6004D8A61 /* EffectAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,6 +42,10 @@
 
 /* Begin PBXFileReference section */
 		5B76A64A2623567D00966D6B /* UtilityDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityDrawer.swift; sourceTree = "<group>"; };
+		5B76A6502624923C00966D6B /* ShapeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeBuilder.swift; sourceTree = "<group>"; };
+		5B76A65A26274D3F00966D6B /*  RhombusTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " RhombusTest.swift"; sourceTree = "<group>"; };
+		5BF4E4F7262DD87E007D9AE5 /* CGAffineTrabsform_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGAffineTrabsform_Extension.swift; sourceTree = "<group>"; };
+		5BF4E4FC262DDB63007D9AE5 /* RhombusBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhombusBuilder.swift; sourceTree = "<group>"; };
 		7FCF55CE261C3ED6004D8A61 /* EffectAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EffectAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FCF55D1261C3ED6004D8A61 /* EffectAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectAnimator.h; sourceTree = "<group>"; };
 		7FCF55D2261C3ED6004D8A61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,6 +94,31 @@
 			path = UtilityDrawer;
 			sourceTree = "<group>";
 		};
+		5B76A654262738FE00966D6B /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				5B76A6502624923C00966D6B /* ShapeBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		5B76A65926274D0E00966D6B /* BuilderTest */ = {
+			isa = PBXGroup;
+			children = (
+				5B76A65A26274D3F00966D6B /*  RhombusTest.swift */,
+			);
+			path = BuilderTest;
+			sourceTree = "<group>";
+		};
+		5BF4E4FB262DDAF8007D9AE5 /* ShapeBuilderTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				5B76A654262738FE00966D6B /* Builder */,
+				5BF4E4FC262DDB63007D9AE5 /* RhombusBuilder.swift */,
+			);
+			path = ShapeBuilderTemplate;
+			sourceTree = "<group>";
+		};
 		7FCF55C4261C3ED6004D8A61 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +140,7 @@
 		7FCF55D0261C3ED6004D8A61 /* EffectAnimator */ = {
 			isa = PBXGroup;
 			children = (
+				5BF4E4FB262DDAF8007D9AE5 /* ShapeBuilderTemplate */,
 				5B76A6492623563C00966D6B /* UtilityDrawer */,
 				7FCF55EA261C3EEF004D8A61 /* Moudel */,
 				7FCF55F7261C3F1A004D8A61 /* Extension */,
@@ -122,6 +156,7 @@
 		7FCF55DB261C3ED6004D8A61 /* EffectAnimatorTests */ = {
 			isa = PBXGroup;
 			children = (
+				5B76A65926274D0E00966D6B /* BuilderTest */,
 				7FCF55DC261C3ED6004D8A61 /* EffectAnimatorTests.swift */,
 				7FCF55DE261C3ED6004D8A61 /* Info.plist */,
 			);
@@ -143,6 +178,7 @@
 				7FCF55F8261C3F1A004D8A61 /* UIImage.swift */,
 				7FCF55F9261C3F1A004D8A61 /* Double_extension.swift */,
 				7FCF565E261C4BF8004D8A61 /* String_Extension.swift */,
+				5BF4E4F7262DD87E007D9AE5 /* CGAffineTrabsform_Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -293,11 +329,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B76A6512624923C00966D6B /* ShapeBuilder.swift in Sources */,
 				7FCF565F261C4BF8004D8A61 /* String_Extension.swift in Sources */,
 				7FCF55FB261C3F1A004D8A61 /* Double_extension.swift in Sources */,
 				7FCF5603261C3F2B004D8A61 /* MarqueeRenderer.swift in Sources */,
 				7FCF565B261C4925004D8A61 /* WaveMarqueeRenderer.swift in Sources */,
 				7FCF560C261C3F6C004D8A61 /* BaseAnimatorView.swift in Sources */,
+				5BF4E4FD262DDB63007D9AE5 /* RhombusBuilder.swift in Sources */,
 				7FCF55FA261C3F1A004D8A61 /* UIImage.swift in Sources */,
 				7FCF5663261C6016004D8A61 /* OceanWaveEffect.swift in Sources */,
 				7FCF55ED261C3EEF004D8A61 /* DateUtility.swift in Sources */,
@@ -306,6 +344,7 @@
 				7FCF560B261C3F6C004D8A61 /* BasicLabel.swift in Sources */,
 				7FCF560D261C3F6C004D8A61 /* BasicAnimator.swift in Sources */,
 				7FCF55EE261C3EEF004D8A61 /* Logger.swift in Sources */,
+				5BF4E4F8262DD87E007D9AE5 /* CGAffineTrabsform_Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FCF55DD261C3ED6004D8A61 /* EffectAnimatorTests.swift in Sources */,
+				5B76A65B26274D3F00966D6B /*  RhombusTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

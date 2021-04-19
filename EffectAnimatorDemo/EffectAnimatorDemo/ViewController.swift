@@ -44,6 +44,19 @@ class ViewController: UIViewController {
         ])
         basicView.setup()
         basicView.startAnimate()
+        
+        
+        let rview = RhombusView()
+        
+        view.addSubview(rview)
+        rview.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            rview.topAnchor.constraint(equalTo: basicView.bottomAnchor),
+            rview.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            rview.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            rview.heightAnchor.constraint(equalToConstant: 300)
+        ])
+        
     
     }
     

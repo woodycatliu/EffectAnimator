@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BF4E4E62627503F007D9AE5 /* EffectAnimatorDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4E4E52627503F007D9AE5 /* EffectAnimatorDemoTests.swift */; };
+		5BF4E4F02627505A007D9AE5 /* RhombusTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4E4EF2627505A007D9AE5 /* RhombusTest.swift */; };
+		5BF4E4F4262750B4007D9AE5 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4E4F3262750B4007D9AE5 /* TestView.swift */; };
 		7FCF561F261C4034004D8A61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF561E261C4034004D8A61 /* AppDelegate.swift */; };
 		7FCF5621261C4034004D8A61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF5620261C4034004D8A61 /* SceneDelegate.swift */; };
 		7FCF5623261C4034004D8A61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF5622261C4034004D8A61 /* ViewController.swift */; };
@@ -16,7 +19,22 @@
 		7FCF564E261C4216004D8A61 /* EffectAnimator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FCF564D261C4216004D8A61 /* EffectAnimator.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5BF4E4E82627503F007D9AE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FCF5613261C4034004D8A61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FCF561A261C4034004D8A61;
+			remoteInfo = EffectAnimatorDemo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		5BF4E4E32627503F007D9AE5 /* EffectAnimatorDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EffectAnimatorDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BF4E4E52627503F007D9AE5 /* EffectAnimatorDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectAnimatorDemoTests.swift; sourceTree = "<group>"; };
+		5BF4E4E72627503F007D9AE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BF4E4EF2627505A007D9AE5 /* RhombusTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhombusTest.swift; sourceTree = "<group>"; };
+		5BF4E4F3262750B4007D9AE5 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		7FCF561B261C4034004D8A61 /* EffectAnimatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EffectAnimatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FCF561E261C4034004D8A61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FCF5620261C4034004D8A61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,6 +47,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5BF4E4E02627503F007D9AE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7FCF5618261C4034004D8A61 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -40,10 +65,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BF4E4E42627503F007D9AE5 /* EffectAnimatorDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				5BF4E4E52627503F007D9AE5 /* EffectAnimatorDemoTests.swift */,
+				5BF4E4E72627503F007D9AE5 /* Info.plist */,
+				5BF4E4EF2627505A007D9AE5 /* RhombusTest.swift */,
+			);
+			path = EffectAnimatorDemoTests;
+			sourceTree = "<group>";
+		};
 		7FCF5612261C4034004D8A61 = {
 			isa = PBXGroup;
 			children = (
 				7FCF561D261C4034004D8A61 /* EffectAnimatorDemo */,
+				5BF4E4E42627503F007D9AE5 /* EffectAnimatorDemoTests */,
 				7FCF561C261C4034004D8A61 /* Products */,
 				7FCF564C261C4216004D8A61 /* Frameworks */,
 			);
@@ -53,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				7FCF561B261C4034004D8A61 /* EffectAnimatorDemo.app */,
+				5BF4E4E32627503F007D9AE5 /* EffectAnimatorDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +104,7 @@
 				7FCF5627261C4036004D8A61 /* Assets.xcassets */,
 				7FCF5629261C4036004D8A61 /* LaunchScreen.storyboard */,
 				7FCF562C261C4036004D8A61 /* Info.plist */,
+				5BF4E4F3262750B4007D9AE5 /* TestView.swift */,
 			);
 			path = EffectAnimatorDemo;
 			sourceTree = "<group>";
@@ -82,6 +120,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5BF4E4E22627503F007D9AE5 /* EffectAnimatorDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BF4E4EC2627503F007D9AE5 /* Build configuration list for PBXNativeTarget "EffectAnimatorDemoTests" */;
+			buildPhases = (
+				5BF4E4DF2627503F007D9AE5 /* Sources */,
+				5BF4E4E02627503F007D9AE5 /* Frameworks */,
+				5BF4E4E12627503F007D9AE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BF4E4E92627503F007D9AE5 /* PBXTargetDependency */,
+			);
+			name = EffectAnimatorDemoTests;
+			productName = EffectAnimatorDemoTests;
+			productReference = 5BF4E4E32627503F007D9AE5 /* EffectAnimatorDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7FCF561A261C4034004D8A61 /* EffectAnimatorDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FCF562F261C4036004D8A61 /* Build configuration list for PBXNativeTarget "EffectAnimatorDemo" */;
@@ -108,6 +164,10 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					5BF4E4E22627503F007D9AE5 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 7FCF561A261C4034004D8A61;
+					};
 					7FCF561A261C4034004D8A61 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -127,11 +187,19 @@
 			projectRoot = "";
 			targets = (
 				7FCF561A261C4034004D8A61 /* EffectAnimatorDemo */,
+				5BF4E4E22627503F007D9AE5 /* EffectAnimatorDemoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5BF4E4E12627503F007D9AE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7FCF5619261C4034004D8A61 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -145,10 +213,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5BF4E4DF2627503F007D9AE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BF4E4F02627505A007D9AE5 /* RhombusTest.swift in Sources */,
+				5BF4E4E62627503F007D9AE5 /* EffectAnimatorDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7FCF5617261C4034004D8A61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BF4E4F4262750B4007D9AE5 /* TestView.swift in Sources */,
 				7FCF5623261C4034004D8A61 /* ViewController.swift in Sources */,
 				7FCF561F261C4034004D8A61 /* AppDelegate.swift in Sources */,
 				7FCF5621261C4034004D8A61 /* SceneDelegate.swift in Sources */,
@@ -156,6 +234,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5BF4E4E92627503F007D9AE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FCF561A261C4034004D8A61 /* EffectAnimatorDemo */;
+			targetProxy = 5BF4E4E82627503F007D9AE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7FCF5624261C4034004D8A61 /* Main.storyboard */ = {
@@ -177,6 +263,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5BF4E4EA2627503F007D9AE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HMB28F9R4H;
+				INFOPLIST_FILE = EffectAnimatorDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = woodycode.EffectAnimatorDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EffectAnimatorDemo.app/EffectAnimatorDemo";
+			};
+			name = Debug;
+		};
+		5BF4E4EB2627503F007D9AE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HMB28F9R4H;
+				INFOPLIST_FILE = EffectAnimatorDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = woodycode.EffectAnimatorDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EffectAnimatorDemo.app/EffectAnimatorDemo";
+			};
+			name = Release;
+		};
 		7FCF562D261C4036004D8A61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -332,6 +458,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5BF4E4EC2627503F007D9AE5 /* Build configuration list for PBXNativeTarget "EffectAnimatorDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BF4E4EA2627503F007D9AE5 /* Debug */,
+				5BF4E4EB2627503F007D9AE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7FCF5616261C4034004D8A61 /* Build configuration list for PBXProject "EffectAnimatorDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
