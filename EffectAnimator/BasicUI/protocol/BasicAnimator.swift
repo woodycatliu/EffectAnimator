@@ -6,17 +6,9 @@
 //
 
 /*
- 2021-04-04
- 修改方向~
- basicAnimate
- - 分離繪圖。
- - 功能：時間管理
- 1. currectDate()
- 2. displayLinkSelector -> 改名 update
- 3. 思考 移除 by value, fromValue, byValue 由 Render 擔任
- 4. 時間控管 改為 currectTime ， update 紀錄 上一次displayLink currectTime
- 5. 每 0.1 秒呼叫 draw
- 6. timeSpace 可控
+ 2021-06-10
+ - 新增 restar renderer method : afreshAnimator
+ - 新增 delegate 互動
  */
 
 
@@ -66,9 +58,9 @@ public protocol BasicAnimator: AnyObject {
     
     func resetAnimate()
     
-    init(duration: Double, renderers: [BaseRenderer], frame: CGRect)
+    init(duration: Double, renderers: [BaseRendererProtocol], frame: CGRect)
     
-    init(renderers: [BaseRenderer])
+    init(renderers: [BaseRendererProtocol])
 }
 
 extension BasicAnimator where Self: UIView {
@@ -95,7 +87,7 @@ extension BasicAnimator where Self: UIView {
         return displayLink?.isPaused ?? false
     }
     
-    public init(duration: Double = .greatestFiniteMagnitude, renderers: [BaseRenderer], frame: CGRect) {
+    public init(duration: Double = .greatestFiniteMagnitude, renderers: [BaseRendererProtocol], frame: CGRect) {
         self.init(frame: frame)
         self.duration = duration
         self.animatorRenderers = renderers
@@ -103,13 +95,13 @@ extension BasicAnimator where Self: UIView {
     
    public func resetAnimate() {
         animatorRenderers.forEach {
-            $0.launchedTimeInterval = 0
+            $0.afreshAnimator()
         }
         beginTime = nil
         setup()
     }
     
-    public init(renderers: [BaseRenderer]) {
+    public init(renderers: [BaseRendererProtocol]) {
         self.init(renderers: renderers, frame: .zero)
     }
 }

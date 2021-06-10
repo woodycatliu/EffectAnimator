@@ -14,6 +14,8 @@ public protocol RendererDelegate: AnyObject {
 
 public protocol BaseRendererProtocol: AnyObject {
     
+    var isEnd: Bool { get set }
+    
     var delegate: RendererDelegate? { get set }
     
     var identifier: String { get }
@@ -35,6 +37,8 @@ public protocol BaseRendererProtocol: AnyObject {
     func translateBy(_ ctx: CGContext, dx: CGFloat, dy: CGFloat)-> CGAffineTransform
     
     func scale(_ ctx: CGContext, scaleX: CGFloat, scaleY: CGFloat ,originSize: CGSize)-> CGAffineTransform
+    
+    func afreshAnimator()
 }
 
 // MARK: Time Manager
@@ -42,7 +46,9 @@ extension BaseRendererProtocol {
     
     public func draw(in ctx: CGContext, _ rect: CGRect, timeInterval: CFTimeInterval)-> CGContext {
         self.launchedTimeInterval += timeInterval
+
         let precent = timeToPercent()
+        
         return _draw(in: ctx, rect, percent: precent)
     }
     
@@ -50,13 +56,24 @@ extension BaseRendererProtocol {
         
         guard duration > 0 else { return 0.0 }
         
+        guard !isEnd else {
+            return 1.0
+        }
+        
         let timestamp = launchedTimeInterval / duration
         
         guard timestamp < repeatCount else {
+            isEnd = true
             delegate?.endDawing(identifier: identifier)
             return 1.0
         }
         return CGFloat(timestamp - Double.getInteger(timestamp))
+    }
+    
+    
+    public func afreshAnimator() {
+        launchedTimeInterval = 0
+        isEnd = false
     }
 }
 
@@ -105,6 +122,8 @@ extension BaseRendererProtocol {
 
 
 open class BaseRenderer: BaseRendererProtocol {
+    
+    public var isEnd: Bool = false
     
     public var delegate: RendererDelegate?
     

@@ -92,6 +92,7 @@ extension BasicAnimator {
 
 
 class CircleRenderer: BaseRendererProtocol {
+    var isEnd: Bool = false
     
     weak var delegate: RendererDelegate?
     
