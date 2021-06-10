@@ -16,16 +16,16 @@ open class EABasicView: UIView, BasicAnimator {
     
     public var lastUpdateTime: CFTimeInterval = 0
     /// 動畫持續時間
-    public var duration: Double = .greatestFiniteMagnitude
+    public var duration: Double = 30
     
     /// 動畫每一幀時間間隔
     public var interval: Double = 1 / 60
     /// 實際時間間隔
     public var _interval: Double = 0
     
-    public var delegate: AnyObject?
+    public weak var delegate: AnimatorDelegate?
     
-    public var animatorRenderers: [BaseRenderer] = []
+    public var animatorRenderers: [BaseRendererProtocol] = []
         
     @objc public func update() {
         guard let beginTime = beginTime else { return }
@@ -37,6 +37,7 @@ open class EABasicView: UIView, BasicAnimator {
             displayLink?.invalidate()
             self.beginTime = nil
             lastUpdateTime = 0
+            delegate?.endAnimator(identifier: "")
             return
         }
         
@@ -44,7 +45,6 @@ open class EABasicView: UIView, BasicAnimator {
             _interval = lastUpdateTime == 0 ? currentTime - beginTime : currentTime - lastUpdateTime
             lastUpdateTime = currentTime
             setNeedsDisplay()
-//            layer.setNeedsDisplay()
         }
         
     }
@@ -73,6 +73,7 @@ extension EABasicView {
         }
         
         for renderer in animatorRenderers {
+            renderer.delegate = self
             ctx = renderer.draw(in: ctx, rect, timeInterval: _interval)
             ctx.setAlpha(1)
         }
@@ -81,3 +82,11 @@ extension EABasicView {
 }
 
 
+
+extension EABasicView: RendererDelegate {
+    
+    public func endDawing(identifier: String) {
+        delegate?.endAnimator(identifier: identifier)
+    }
+    
+}

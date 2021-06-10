@@ -30,10 +30,6 @@ class RhombusView: UIView {
         
     ctx.addLines(between: points)
 
-    
-        
-        
-        
         ctx.strokePath()
         super.draw(rect)
     }
@@ -42,3 +38,5 @@ class RhombusView: UIView {
     
     
 }
+
+

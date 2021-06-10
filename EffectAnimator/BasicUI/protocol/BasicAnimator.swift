@@ -22,8 +22,12 @@
 
 import UIKit
 
+public protocol AnimatorDelegate: AnyObject {
+    func endAnimator(identifier: String?)
+}
 
-public protocol BasicAnimator: class {
+
+public protocol BasicAnimator: AnyObject {
     /// 控制器
     var displayLink: CADisplayLink? { get set }
     
@@ -41,12 +45,12 @@ public protocol BasicAnimator: class {
     var _interval: Double { get set }
     
     
-    var animatorRenderers: [BaseRenderer] { get set }
+    var animatorRenderers: [BaseRendererProtocol] { get set }
     
     var isAnimating: Bool { get }
     
     /// touch delegate 傳出
-    var delegate: AnyObject? { get set }
+    var delegate: AnimatorDelegate? { get set }
     
     /// displayLink 每一幀調用更新
     func update()
@@ -57,7 +61,10 @@ public protocol BasicAnimator: class {
     
     func restartAnimate()
     
+    /// 安裝Display
     func setup()
+    
+    func resetAnimate()
     
     init(duration: Double, renderers: [BaseRenderer], frame: CGRect)
     
@@ -94,11 +101,17 @@ extension BasicAnimator where Self: UIView {
         self.animatorRenderers = renderers
     }
     
+   public func resetAnimate() {
+        animatorRenderers.forEach {
+            $0.launchedTimeInterval = 0
+        }
+        beginTime = nil
+        setup()
+    }
+    
     public init(renderers: [BaseRenderer]) {
         self.init(renderers: renderers, frame: .zero)
     }
 }
-
-
 
 

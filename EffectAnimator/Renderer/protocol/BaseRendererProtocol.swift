@@ -7,8 +7,16 @@
 
 import UIKit
 
+public protocol RendererDelegate: AnyObject {
+    func endDawing(identifier: String)
+}
 
-public protocol BaseRendererProtocol: class {
+
+public protocol BaseRendererProtocol: AnyObject {
+    
+    var delegate: RendererDelegate? { get set }
+    
+    var identifier: String { get }
     /// 一次動畫生命週期所需時間
     var duration: Double { get set }
     /// 動畫已執行時間
@@ -45,6 +53,7 @@ extension BaseRendererProtocol {
         let timestamp = launchedTimeInterval / duration
         
         guard timestamp < repeatCount else {
+            delegate?.endDawing(identifier: identifier)
             return 1.0
         }
         return CGFloat(timestamp - Double.getInteger(timestamp))
@@ -97,6 +106,10 @@ extension BaseRendererProtocol {
 
 open class BaseRenderer: BaseRendererProtocol {
     
+    public var delegate: RendererDelegate?
+    
+    public var identifier: String
+    
     open var duration: Double
     
     open var launchedTimeInterval: CFTimeInterval = 0
@@ -108,7 +121,8 @@ open class BaseRenderer: BaseRendererProtocol {
         return ctx
     }
     
-    public init(duration: Double) {
+    public init(duration: Double, identifier: String = "BassRenderer") {
+        self.identifier = identifier
         self.duration = duration
     }
     
