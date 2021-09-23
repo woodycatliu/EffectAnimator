@@ -11,7 +11,9 @@ import UIKit
 extension CGAffineTransform {
     
     static func rotate(at center: CGPoint,_ by: CGFloat)-> CGAffineTransform {
-        return CGAffineTransform(translationX: center.x, y: center.y).rotated(by: by).translatedBy(x: -center.x, y: -center.y)
+        return CGAffineTransform(translationX: center.x, y: center.y)
+            .rotated(by: by)
+            .translatedBy(x: -center.x, y: -center.y)
     }
     
     
@@ -23,7 +25,9 @@ extension CGAffineTransform {
     ///   - y: y  縮放程度
     /// - Returns: CGAffineTransform
     static func sclae(at center: CGPoint,x: CGFloat, y: CGFloat)-> CGAffineTransform {
-       return CGAffineTransform(translationX: center.x, y: center.y).scaledBy(x: x, y: y).translatedBy(x: -center.x, y: -center.y)
+       return CGAffineTransform(translationX: center.x, y: center.y)
+        .scaledBy(x: x, y: y)
+        .translatedBy(x: -center.x, y: -center.y)
     }
     
     

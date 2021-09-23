@@ -35,8 +35,11 @@ class ViewController: UIViewController {
 //        basicView.animatorRenderers = [waveRenderer, renderer, waveMarqeeRenderer]
         
         let cir = CircleRenderer(duration: 30)
+        let  ar = Mar(duration: 6)
+        ar.text = "https://translate.google.com.tw/?"
+        basicView.animatorRenderers = [ar, renderer, waveRenderer, waveMarqeeRenderer]
         
-        basicView.animatorRenderers = [cir]
+//        basicView.animatorRenderers = [cir]
 
         basicView.backgroundColor = .yellow
         
@@ -122,6 +125,16 @@ class CircleRenderer: BaseRendererProtocol {
     init(duration: Double, identifier: String = "DrawCircle") {
         self.duration = duration
         self.identifier = identifier
+    }
+    
+}
+
+
+class Mar: MqrqueeRenderer {
+    
+     func draw(in ctx: CGContext, _ rect: CGRect, timeInterval: CFTimeInterval) -> CGContext {
+        
+       return super.draw(in: ctx, rect, timeInterval: timeInterval)
     }
     
 }

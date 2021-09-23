@@ -17,7 +17,6 @@ import UIKit
 public protocol AnimatorDelegate: AnyObject {
     func endAnimator(identifier: String?)
     func checking(time point: TimeInterval)
-
 }
 
 

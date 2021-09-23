@@ -25,7 +25,6 @@ open class MqrqueeRenderer: BaseRenderer {
     
     
     func drawText(in ctx: CGContext, _ rect: CGRect, percent: CGFloat) {
-        
         guard let text = text else {
             Logger.log(message: "text is nil")
             return }
@@ -53,7 +52,7 @@ open class MqrqueeRenderer: BaseRenderer {
         }
         
         let y = ctxHeight - texHeight <= 0 ? 0 : (ctxHeight - texHeight) / 2
-        
+                        
         UIGraphicsPushContext(ctx)
         let attributes: [NSAttributedString.Key: Any] = [.foregroundColor: textColor, .font: textFont]
         let stringAttribute = NSAttributedString(string: self.text ?? "", attributes: attributes)

@@ -72,9 +72,12 @@ extension EABasicView {
             return
         }
         
+        let ctm = ctx.ctm
+        
         for renderer in animatorRenderers {
             renderer.delegate = self
             ctx = renderer.draw(in: ctx, rect, timeInterval: _interval)
+            ctx.resetTransform(ctm)
             ctx.setAlpha(1)
         }
         super.draw(rect)

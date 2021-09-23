@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B766C6D26CD7F6A00E4343B /*  CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B766C6C26CD7F6A00E4343B /*  CGContext.swift */; };
 		5B76A64B2623567D00966D6B /* UtilityDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A64A2623567D00966D6B /* UtilityDrawer.swift */; };
 		5B76A6512624923C00966D6B /* ShapeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A6502624923C00966D6B /* ShapeBuilder.swift */; };
 		5B76A65B26274D3F00966D6B /*  RhombusTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A65A26274D3F00966D6B /*  RhombusTest.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B766C6C26CD7F6A00E4343B /*  CGContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " CGContext.swift"; sourceTree = "<group>"; };
 		5B76A64A2623567D00966D6B /* UtilityDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityDrawer.swift; sourceTree = "<group>"; };
 		5B76A6502624923C00966D6B /* ShapeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeBuilder.swift; sourceTree = "<group>"; };
 		5B76A65A26274D3F00966D6B /*  RhombusTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " RhombusTest.swift"; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				7FCF55F9261C3F1A004D8A61 /* Double_extension.swift */,
 				7FCF565E261C4BF8004D8A61 /* String_Extension.swift */,
 				5BF4E4F7262DD87E007D9AE5 /* CGAffineTrabsform_Extension.swift */,
+				5B766C6C26CD7F6A00E4343B /*  CGContext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B766C6D26CD7F6A00E4343B /*  CGContext.swift in Sources */,
 				5B76A6512624923C00966D6B /* ShapeBuilder.swift in Sources */,
 				7FCF565F261C4BF8004D8A61 /* String_Extension.swift in Sources */,
 				7FCF55FB261C3F1A004D8A61 /* Double_extension.swift in Sources */,
