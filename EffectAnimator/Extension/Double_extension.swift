@@ -20,6 +20,17 @@ extension Double {
     var percentage: Double {
         return self - Double(Int(self))
     }
+    
+    func rounding(to position: Int)-> Double {
+        var origin = Decimal(self)
+        var willRound = Decimal()
+        NSDecimalRound(&willRound, &origin, position, .plain)
+        return NSDecimalNumber(decimal: willRound).doubleValue
+    }
+    
+    func string()-> String {
+        return NSDecimalNumber(decimal: Decimal(self)).stringValue
+    }
 }
 
 
@@ -34,5 +45,16 @@ extension CGFloat {
     
     var percentage: CGFloat {
         return self - CGFloat(Int(self))
+    }
+    
+    func rounding(to position: Int)-> CGFloat {
+        var origin = Decimal(self)
+        var willRound = Decimal()
+        NSDecimalRound(&willRound, &origin, position, .plain)
+        return CGFloat(NSDecimalNumber(decimal: willRound).floatValue)
+    }
+    
+    func string()-> String {
+        return NSDecimalNumber(decimal: Decimal(self)).stringValue
     }
 }
